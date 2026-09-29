@@ -16,12 +16,7 @@
         var prod = a * b;
         var div = a / b;
         var mod = a % b;
-        var rg = a < b;
-        var lg = a > b;
-        var gg = a == b;
-        var ga = a != b;
-        var gb = a <= b;
-        var gq = a >= b;
+      
         var gf = a && b;
         var gy = a || b;
         
@@ -30,15 +25,15 @@
         console.log( a + " * " + b + " = " + prod);
         console.log( a + " / " + b + " = " + div);
         console.log( a + " % " + b + " = " + mod);
-        console.log( a + " < " + b + " = " + rg);
-        console.log( a + " > " + b + " = " + lg);
-        console.log( a + " == " + b + " = " + gg);
-        console.log( a + " != " + b + " = " + ga);
-        console.log( a + " <= " + b + " = " + gb);
-        console.log( a + " >= " + b + " = " + gq);
-        console.log( a + " && " + b + " = " + gf);
-        console.log( a + " && " + b + " = " + gf);
-        console.log( a + " || " + b + " = " + gy);
+            
+        console.log(a + " > " + a + " = " + (a > b));
+        console.log(a + " >= " + a + " = " + (a >= b));
+        console.log(a + " < " + a + " = " + (a < b));
+        console.log(a + " <= " + a + " = " + (a <= b));
+        console.log(a + " == " + a + " = " + (a == b));
+        console.log(a + " != " + a + " = " + (a != b));
+        console.log(a + " && " + a + " = " + (a && b));
+        console.log(a + " || " + a + " = " + (a || b));
             
     </script>
 </head>
