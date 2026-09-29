@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Employee Portal Login</title>
+    <style>
+        /* Reset default browser styles */
+        body {
+            background-color: #f4f4f5;
+            margin: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        /* Center Form Table Border */
+        table {
+            background-color: #ffffff;
+            border: 2px solid #27272a;
+            border-collapse: collapse;
+            width: 380px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 0px;
+        }
+        /* Table Header Styles */
+        thead {
+            background-color: #18181b;
+            color: #ffffff;
+        }
+        /* Table Body Styles */
+        h2 {
+            margin: 0;
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 0.5px;
+            padding: 18px 10px 18px 10px;
+        }
+        /* Table Body Styles */
+        tbody td {
+            color: #18181b;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-bottom: 1px solid #e4e4e7;
+            padding: 12px 16px;
+        }
+        /* Input Field Styles */
+        input {
+            width: 100%;
+            background-color: #fafafa;
+            border: 1px solid #a1a1aa;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            color: #09090b;
+            padding: 10px 12px 10px 12px;
+        }
+        /* Table Footer Styles */
+        tfoot td {
+            background-color: #fafafa;
+            text-align: center;
+            padding: 16px 14px 18px;
+        }
+        /* Submit and Reset Button Styles */
+        input[type="submit"] {
+            background-color: #18181b;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 8px;
+            width: 45%;
+            padding: 10px 18px;
+        }
+        /* Reset Button Styles */
+        input[type="reset"] {
+            background-color: #71717a;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 45%;
+            padding: 10px 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Form -->
+    <form action="#" method="POST">
+        <center>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <!-- Portal Login Header -->
+                        <h2>Portal Login</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- Username label -->
+                        <label for="username">Username:</label>
+                    </td>
+                    <td>
+                        <!-- Username input -->
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Password label -->
+                        <label for="password">Password:</label>
+                    </td>
+
+                    <td>
+                        <!-- Password input -->
+                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- Submit and Reset buttons -->
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Information -->
+                    <td colspan="2" style="font-size: 0.8rem; color: #71717a; font-weight: normal; border-top: 1px dashed #d4d4d8;">
+                        Created by: Lance Kherwin Maliksi - 2026 & Section Cooper
+                    </td>
+                </tr>
+            </tfoot>     
+        </table>
+        </center>
+    </form>
+</body>
+</html>
