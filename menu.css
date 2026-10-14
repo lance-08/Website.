@@ -1,52 +1,62 @@
+/* nagbibigay kulay sa navigation bar background */
     .navbar { 
-    background-color: #1B365D; 
-    width: 100%; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #111827; /* kulay ng gray navigation bar background  */
+    width: 100%;  /* lapad ng navigation bar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* nagbibigay ng shadow effect sa navigation bar */
 } 
-
-    .nav-link { 
-    display: block;               
-    padding: 14px 20px;           
-    color: #FFFFFF;               
-    text-decoration: none;        
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 15px; 
-    font-weight: 600; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    /* nagbibigay estilo sa navigation links */
+    .nav-link {  
+    display: block;    /* nagpapakita ng link bilang block element */           
+    padding: 14px 20px;      /* padding sa loob ng link */ 
+    color: #94A3B8;               /* kulay ng text ng link */
+    text-decoration: none;        /* tinatanggal ang underline sa link */
+    font-family: 'Segoe UI', sans-serif; /* font family ng link */
+    font-size: 15px; /* laki ng font ng link */
+    font-weight: 600; /* bigat ng font ng link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* nagbibigay ng transition effect sa background at color ng link */
 }
+/* nagbibigay estilo sa navigation links kapag hover */
     .nav-link:hover { 
-    background-color: #F2F2F2;    
-    color: #1B365D;               
+    background-color: #1E293B;   /* kulay ng background kapag hover */
+    color: #E2E8F0;               /* kulay ng text kapag hover */
 }
+
+/* nagbibigay estilo sa navigation links kapag active */
 .nav-link:link { 
-    color: #FFFFFF; 
+    color: #94A3B8; /* kulay ng text ng link kapag active */
 }
+/* nagbibigay estilo sa navigation links kapag nandoon ang user */
 .nav-link:visited { 
-    color: #E0E0E0; 
+    color: #64748B; /* kulay ng text ng link kapag nandoon ang user */
 } 
+/* nagbibigay estilo sa navigation links kapag hover */
 .nav-link:hover { 
-    background-color: #005A9C; 
-    color: #FFFFFF; 
+    background-color: #1E293B; /* kulay ng background kapag hover */
+    color: #E2E8F0; /* kulay ng text kapag hover */
 } 
+/* nagbibigay estilo sa navigation links kapag focus */
 .nav-link:focus { 
-    outline: 3px solid #FFC107; 
+    outline: 3px solid #38BDF8; /* nagbibigay ng outline sa link kapag focus */
     outline-offset: -3px; 
-    background-color: #004080; 
+    background-color: #0F172A; /* kulay ng background kapag focus */
 } 
+/* nagbibigay estilo sa navigation links kapag active */
 .nav-link:active { 
-    background-color: #002B55; 
-    transform: translateY(1px); 
+    background-color: #0B0F19; /* kulay ng background kapag active */
+    transform: translateY(1px); /* nagbibigay ng effect na parang na-click ang link */
 } 
+/* nagbibigay estilo sa navigation links kapag active at nandoon ang user */
 .nav-link.active { 
-    background-color: #005A9C; 
-    border-bottom: 4px solid #FFC107; 
+    background-color: #1F2937; /* kulay ng background kapag active at nandoon ang user */
+    border-bottom: 4px solid #38BDF8; /* nagbibigay ng border sa ilalim ng link kapag active at nandoon ang user */
 }  
+/* nagbibigay estilo sa navigation list */
 .nav-list { 
-    display: flex;              
-    flex-direction: row;       
-    justify-content: flex-start;  
-    align-items: center;            
-    list-style-type: none;        
-    margin: 0;                   
-    padding: 0;                   
+    display: flex;       /* nagpapakita ng list bilang flex container */       
+    flex-direction: row;       /* nagpapakita ng list items sa isang hilera */
+    justify-content: flex-start;  /* inilalagay ang list items sa simula ng container */
+    align-items: center;            /* inilalagay ang list items sa gitna ng container */
+    list-style-type: none;        /* tinatanggal ang default na bullet points ng list */
+    margin: 0;                   /* tinatanggal ang default na margin ng list */
+    padding: 0;                   /* tinatanggal ang default na padding ng list */
 }
