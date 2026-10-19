@@ -1,0 +1,72 @@
+[
+    {
+    "bounty": 3000000000,
+    "name": "Monkey D. Luffy",
+    "age": 19,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/luffy.jpe"
+  },
+  {
+    "bounty": 1111000000,
+    "name": "Roronoa Zoro",
+    "age": 21,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/zoro.jpe"
+  },
+  {
+    "bounty": 366000000,
+    "name": "Nami",
+    "age": 20,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/nami.jpe"
+  },
+  {
+    "bounty": 930000000,
+    "name": "Nico Robin",
+    "age": 30,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/robin.jpe"
+  },
+  {
+    "bounty": 1100000000,
+    "name": "Jinbe",
+    "age": 46,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/jinbe.jpe"
+  },
+  {
+    "bounty": 1032000000,
+    "name": "Vinsmoke Sanji",
+    "age": 21,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/sanji.jpe"
+  },
+{
+    "bounty": 500000000,
+    "name": "Usopp",
+    "age": 19,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/usopp.jpe"
+  },
+  {
+    "bounty": 394000000,
+    "name": "Franky",
+    "age": 36,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/franky.jpe"
+  },
+  {
+    "bounty": 383000000,
+    "name": "Brook",
+    "age": 90,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/brook.jpe"
+  },
+{
+    "bounty": 1000,
+    "name": "Tony Tony Chopper",
+    "age": 17,
+    "crew": "StrawHat Pirates",
+    "image": "picJson/chopper.jpe"
+  }
+]
