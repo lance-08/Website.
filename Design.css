@@ -1,0 +1,31 @@
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table2{
+    background-color: azure;
+    color: black;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.row1{
+    display: grid;
+    min-height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.cell{
+    background-color: lightblue;
+}
+
+ /*grid-auto-flow:column;*/
