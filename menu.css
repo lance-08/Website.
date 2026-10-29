@@ -99,48 +99,60 @@
     /* tinatanggal ang default na padding ng list */
 }
 
-footer{
-    position: absolute;   /* inilalagay ang footer sa ilalim ng page */
-    bottom: 0;            /* inilalagay ang footer sa ilalim ng page */
-    background-color: #111827; /* kulay ng background ng footer */
-    padding: 25px; /* padding sa loob ng footer */
-    text-align: center; /* inilalagay ang text sa gitna ng footer */
-    width: 100%; /* lapad ng footer */
+footer {
+    position: absolute;
+    /* inilalagay ang footer sa ilalim ng page */
+    bottom: 0;
+    /* inilalagay ang footer sa ilalim ng page */
+    background-color: #111827;
+    /* kulay ng background ng footer */
+    padding: 25px;
+    /* padding sa loob ng footer */
+    text-align: center;
+    /* inilalagay ang text sa gitna ng footer */
+    width: 100%;
+    /* lapad ng footer */
     color: #64748B;
 }
 
-   #b {
-            width: 200px;
-            display: block;
-            margin: 10px auto;
-            background-color: #96cff1;
-            color: #000b49;
-            text-decoration: none;
-            padding: 8px;
-            border: 2px solid;
-        }
+#b {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    background-color: #96cff1;
+    color: #000b49;
+    text-decoration: none;
+    padding: 0.5px;
+    border: 2px solid;
+    justify-content: center;
+    text-align: center;
+}
 
-        nav {
-            text-decoration: none;
-            text-align: center;
-        }
+#b:hover {
+    background-color: #000b49;
+    color: white;
+}
 
-        .c {
-            color: black;
-            text-decoration: none;
-        }
+nav {
+    text-decoration: none;
+    text-align: center;
+}
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            gap: 0.2em;
-        }
 
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
