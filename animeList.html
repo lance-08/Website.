@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List Drag and Drop Game</title>
+    <link rel="stylesheet" href="animeStyle.css">
+    <script src="animeScript.js" defer></script>
+</head>
+
+<body>
+    <center>
+        <h1>Drag And Drop Steam Games API</h1>
+        <h3>Welcome to Tier List Drag and Drop Game!</h3>
+        <p>Drag and drop the games into the appropriate tier or recommendation category. Enjoy!</p>
+        <br>
+    </center>
+
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="game-1">Mortal Kombat</div>
+        <div class="box" draggable="true" id="game-2">Tekken</div>
+        <div class="box" draggable="true" id="game-3">Street Fighter</div>
+        <div class="box" draggable="true" id="game-4">Minecraft</div>
+        <div class="box" draggable="true" id="game-5">Counter Strike</div>
+        <div class="box" draggable="true" id="game-6">Aurelia</div>
+        <div class="box" draggable="true" id="game-7">Summertime Saga</div>
+        <div class="box" draggable="true" id="game-8">Overcooked</div>
+        <div class="box" draggable="true" id="game-9">Grand Theft Auto</div>
+        <div class="box" draggable="true" id="game-10">Terraria</div>
+    </div>
+    <center>
+         <p><i>Let's evaluate the games using the S Tier to D Tier</i></p>
+    </center>
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="s-tier">S Tier</div>
+        <div class="droppable" data-draggable-id="a-tier">A Tier</div>
+        <div class="droppable" data-draggable-id="b-tier">B Tier</div>
+        <div class="droppable" data-draggable-id="c-tier">C Tier</div>
+        <div class="droppable" data-draggable-id="d-tier">D Tier</div>
+    </div>
+    <center>
+         <p><i>After we evaluate the games, we can categorize them based on their performance and popularity.</i></p>
+    </center>
+    <div class="droppableContainer2">
+        <div class="droppable" data-draggable-id="top-rec">Top Recommendation</div>
+        <div class="droppable" data-draggable-id="strong-rec">Strong Recommendation</div>
+        <div class="droppable" data-draggable-id="good">Good</div>
+        <div class="droppable" data-draggable-id="average">Average</div>
+        <div class="droppable" data-draggable-id="not-rec">Not Recommended</div>
+    </div>
+</body>
+
+</html>
