@@ -11,45 +11,61 @@
 
 <body>
     <center>
-        <h1>Drag And Drop Steam Games API</h1>
+        <h1>Drag And Drop Steam Games</h1>
         <h3>Welcome to Tier List Drag and Drop Game!</h3>
-        <p>Drag and drop the games into the appropriate tier or recommendation category. Enjoy!</p>
+        <p>Drag and drop the games into their correct genre categories.</p>
+        <a href="portfolio.html">BACK TO PORTFOLIO</a>
+        <div class="score-board">
+            <h2>Score: <span id="score">0</span> / 150</h2>
+        </div>
         <br>
     </center>
 
-    <div class="draggableContainer">
-        <div class="box" draggable="true" id="game-1">Mortal Kombat</div>
-        <div class="box" draggable="true" id="game-2">Tekken</div>
-        <div class="box" draggable="true" id="game-3">Street Fighter</div>
-        <div class="box" draggable="true" id="game-4">Minecraft</div>
-        <div class="box" draggable="true" id="game-5">Counter Strike</div>
-        <div class="box" draggable="true" id="game-6">Aurelia</div>
-        <div class="box" draggable="true" id="game-7">Summertime Saga</div>
-        <div class="box" draggable="true" id="game-8">Overcooked</div>
-        <div class="box" draggable="true" id="game-9">Grand Theft Auto</div>
-        <div class="box" draggable="true" id="game-10">Terraria</div>
+    <div class="draggableContainer" id="draggableContainer">
+        <div class="box" draggable="true" id="game-1" data-genre="combat">Mortal Kombat</div>
+        <div class="box" draggable="true" id="game-2" data-genre="combat">Tekken</div>
+        <div class="box" draggable="true" id="game-3" data-genre="combat">Street Fighter</div>
+        <div class="box" draggable="true" id="game-4" data-genre="adventure">Minecraft</div>
+        <div class="box" draggable="true" id="game-5" data-genre="action">Counter Strike</div>
+        <div class="box" draggable="true" id="game-6" data-genre="story">Uncharted</div>
+        <div class="box" draggable="true" id="game-7" data-genre="story">Dying Light 1</div>
+        <div class="box" draggable="true" id="game-8" data-genre="friendly">Overcooked</div>
+        <div class="box" draggable="true" id="game-9" data-genre="action">Grand Theft Auto</div>
+        <div class="box" draggable="true" id="game-10" data-genre="adventure">Terraria</div>
     </div>
+
+
     <center>
-         <p><i>Let's evaluate the games using the S Tier to D Tier</i></p>
+         <p><i>Categories: Combat, Adventure, Action, Story, Friendly</i></p>
     </center>
+    
     <div class="droppableContainer">
-        <div class="droppable" data-draggable-id="s-tier">S Tier</div>
-        <div class="droppable" data-draggable-id="a-tier">A Tier</div>
-        <div class="droppable" data-draggable-id="b-tier">B Tier</div>
-        <div class="droppable" data-draggable-id="c-tier">C Tier</div>
-        <div class="droppable" data-draggable-id="d-tier">D Tier</div>
+        <div class="droppable" data-category="combat">Combat Games</div>
+        <div class="droppable" data-category="adventure">Adventure Games</div>
+        <div class="droppable" data-category="action">Action Games</div>
+        <div class="droppable" data-category="story">Story Games</div>
+        <div class="droppable" data-category="friendly">Friendly Games</div>
     </div>
+    <br>
     <center>
-         <p><i>After we evaluate the games, we can categorize them based on their performance and popularity.</i></p>
-    </center>
-    <div class="droppableContainer2">
-        <div class="droppable" data-draggable-id="top-rec">Top Recommendation</div>
-        <div class="droppable" data-draggable-id="strong-rec">Strong Recommendation</div>
-        <div class="droppable" data-draggable-id="good">Good</div>
-        <div class="droppable" data-draggable-id="average">Average</div>
-        <div class="droppable" data-draggable-id="not-rec">Not Recommended</div>
+    <div id="button-container">
+        <button id="reset-btn">Reset Game</button>
     </div>
-    <a href="portfolio.html">BACK TO PORTFOLIO</a>
+    <br>
+
+    <p> This is the Icon of the games so if you are familiar good if not goodluck!!</p>
+    <img src = "Icon/DyingLight.jpe">
+    <img src = "Icon/GTA5.jpe">
+    <img src = "Icon/Minecraft.jpe">
+    <img src = "Icon/Overcooked.jpe">
+    <img src = "Icon/STREETFIGHTER6.jpe">
+    <img src = "Icon/Tekken8.jpe">
+    <img src = "Icon/Terraria.jpe">
+    <img src = "Icon/Uncharted.jpe">
+    <img src = "Icon/MortalKombat.jpe">
+    <img src = "Icon/CounterStrike.jpe">
+    
+    </center>
 </body>
 
 </html>
