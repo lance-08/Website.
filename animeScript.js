@@ -1,47 +1,54 @@
-const draggableElement = document.querySelectorAll('.box');
-const droppableElement = document.querySelectorAll('.droppable');
+let totalScore = 0;
+
+const games = document.querySelectorAll('.box');
+const categories = document.querySelectorAll('.droppable');
+const scoreDisplay = document.getElementById('score');
+const resetButton = document.getElementById('reset-btn');
+const gameContainer = document.getElementById('draggableContainer');
 
 
-
-draggableElement.forEach(element=>{
-    element.addEventListener('dragstart',(drgStart)=>{
-        drgStart.dataTransfer.setData('text',drgStart.target.id);
-        console.log('dragstart event is activated!');
-        drgStart.currentTarget.classList.add('draggableFormat')
-        console.log('dragstart!');
-
-    });// end of EventListener
-
-});//end of ForEach
-
-droppableElement.forEach(element=>{
-    element.addEventListener('drop',drpEvt=>{
-        drpEvt.preventDefault();
-        const droppedElementId = drpEvt.dataTransfer.getData('text');
-        const dropZoneId = drpEvt.target.getAttribute('data-draggable-id');
-
-        drpEvt.target.appendChild(document.getElementById(droppedElementId));
-
-        console.log(droppedElementId);
-
-
-
-    });//end of event listener
-
-    element.addEventListener('dragover',(drgOverEvt)=>{
-        drgOverEvt.preventDefault();
-    });//end of drag over
-
-});
-
-draggableElement.forEach(element=>{
-    element.addEventListener('dragend',drgend=>{
-        //drgendEvt.currentTarget.classList.remove('draggableFormat')
-
-
-
+games.forEach(game => {
+    game.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text', e.target.id);
+        e.target.classList.add('draggableFormat');
     });
 
+    game.addEventListener('dragend', (e) => {
+        e.target.classList.remove('draggableFormat');
+    });
 });
-drgstart.target.id
-drgstart.target.id
+
+categories.forEach(category => {
+    category.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    category.addEventListener('drop', (e) => {
+        e.preventDefault();
+        
+        const gameId = e.dataTransfer.getData('text');
+        const draggedGame = document.getElementById(gameId);
+        
+        e.target.appendChild(draggedGame);
+
+        const gameGenre = draggedGame.getAttribute('data-genre');
+        const categoryType = e.target.getAttribute('data-category');
+
+        if (gameGenre === categoryType) {
+            totalScore += 15;
+        } else {
+            totalScore -= 10;
+        }
+
+        scoreDisplay.textContent = totalScore;
+    });
+});
+
+resetButton.addEventListener('click', () => {
+    totalScore = 0;
+    scoreDisplay.textContent = totalScore;
+
+    games.forEach(game => {
+        gameContainer.appendChild(game);
+    });
+});
