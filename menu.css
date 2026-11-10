@@ -117,20 +117,29 @@ footer {
 
 #b {
     width: 100%;
-    display: block;
     margin: 10px auto;
     background-color: #96cff1;
     color: #000b49;
-    text-decoration: none;
-    padding: 10px;
-    border: 2px solid;
-    justify-content: center;
-    text-align: center;
+    font-size: 0.8rem; 
+    font-weight: 600; 
+    padding: 12px; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    border-radius: 6px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.2s ease, background-color 0.2s ease;    
+    border-style: solid;
+    border-width: 3px;
+    border-color: #071fa8;
 }
 
 #b:hover {
     background-color: #000b49;
     color: white;
+    transform: translateY(-2px);
 }
 
 nav {
@@ -142,11 +151,12 @@ nav {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     justify-items: center;
     max-width: 1000px;
-    margin: 3rem auto;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 * {
