@@ -99,22 +99,6 @@
     /* tinatanggal ang default na padding ng list */
 }
 
-footer {
-    position: absolute;
-    /* inilalagay ang footer sa ilalim ng page */
-    bottom: 0;
-    /* inilalagay ang footer sa ilalim ng page */
-    background-color: #111827;
-    /* kulay ng background ng footer */
-    padding: 25px;
-    /* padding sa loob ng footer */
-    text-align: center;
-    /* inilalagay ang text sa gitna ng footer */
-    width: 100%;
-    /* lapad ng footer */
-    color: #64748B;
-}
-
 #b {
     width: 100%;
     margin: 10px auto;
@@ -165,4 +149,62 @@ nav {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*footer style */
+.footer {
+    background-color: #dbf2f2; 
+    color: #111827;        
+    font-family: "Segoe UI", sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 8%;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    width: 50%;
+}
+
+.footer-text p {
+    margin: 10px 15px;
+    font-size: 12px;
+}
+
+.footer-social {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #111827;           
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color:#111827;         
+}
+
+.footer-bottom {
+    background-color:#111827; 
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    width: 100%;
 }
