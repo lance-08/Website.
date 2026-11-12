@@ -13,7 +13,7 @@
         <h1>Save Grades</h1>
         
         <label>Enter LRN: </label>
-        <input type="text" id="txtLRN" name="lrn" maxlength="11"></input>
+        <input type="text" id="txtLRN" name="lrn" maxlength="12"></input>
 
         <label>Enter Name: </label>
         <input type="text" id="txtName" name="name" maxlength="40"></input>
@@ -29,7 +29,8 @@
 
         <input type="button" id="btnSave" value="Save"></input>
 
-        <p id="message"></p>
+
+        <p id="message"></p> /*lanz*/
         <br><br>
         <table border="1">
             <thead>
@@ -73,8 +74,8 @@
                 row.insertCell().textContent = grades[i].grade;
 
                 var actionCell =row.insertCell();
-
                 actionCell.appendChild(makeUpdateButton(i));
+                actionCell.appendChild(makeDeleteButton(i));
             }
         }
 
@@ -104,6 +105,40 @@
             message.textContent = "Change the values, then click the Update button above the table. ";
         }
 
+        function makeDeleteButton(index){
+            var deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.addEventListener("click", function() {
+                deleteGrade(index);
+            });
+            return deleteButton;
+        }
+
+        function deleteGrade(index) {
+            var sure = confirm("Delete the record of " + grades[index].name + "?");
+            if (!sure) {
+                return;
+            }
+            grades.splice(index, 1);
+
+            if (selectedIndex === index) {
+
+                selectedIndex = -1;
+                btnSave.value = "Save";
+                txtLRN.value = "";
+                txtName.value = "";
+                txtSection.value = "";
+                txtSubject.value = "";
+                txtGrade.value = "";
+            } else if (selectedIndex > index) {
+                selectedIndex = selectedIndex -1;
+            }
+
+        localStorage.setItem("grades", JSON.stringify(grades));
+        message.textContent = "Deleted";
+        showGrades();
+        }
+
         function saveGrades() {
             var lrn = txtLRN.value.trim();
             var name = txtName.value.trim();
@@ -116,7 +151,7 @@
                 return;
             }
 
-            var record = {
+            var record = { 
                 lrn: lrn,
                 name: name,
                 section: section,
