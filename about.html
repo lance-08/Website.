@@ -16,17 +16,40 @@
         });
     </script>
     <style>
+        #accordion {
+            max-width: 700px;
+            margin: 40px auto;
+        }
 
-    .ui-accordion-header {
-      background: #0A182C;
-      color: white;
-    }
-    .ui-accordion-content {  
-      background-color: #b0dfe4;  
-      color: #04215f;  
-      font-size: 10pt;  
-      line-height: 16pt;  
-    }  
+        .ui-accordion-header {
+            background: #00124e;
+            color: #ffffff;
+            border: 1px solid #000d6b;
+            font-weight: bold;
+        }
+
+        .ui-accordion-header:hover {
+            background: #00024a;
+            color: #ffffff;
+        }
+
+        .ui-accordion-header.ui-state-active {
+            background: #000865;
+            color: #ffffff;
+            border-bottom: 3px solid #2d95f7;
+        }
+
+        .ui-accordion-header .ui-icon {
+            filter: brightness(0) invert(1);
+        }
+
+        .ui-accordion-content {
+            background-color: #e0f2f4;
+            color: #0f172a;
+            border: 1px solid #cbd5e1;
+            font-size: 10.5pt;
+            line-height: 16pt;
+        }
     </style>
 </head>
 
@@ -41,60 +64,46 @@
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <center>
-        <br>
-        <h1>About</h1>
-        <p>Welcome to my about page! Here you can learn more about me</p>
-        <br>
-        <h2>(Currently On Working)</h2>
-    </center>
     <br>
     <div id="accordion">
         <h3>Who I Am</h3>
         <div>
             <p>
-                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                I am a Grade 12 Graduating ICT Programming Student at Gov. Juanito Reyes Remulla Senior High School and
+                web developer who loves building functional website. I am passionate about coding and continuously
+                learning new technologies to enhance my skills.
             </p>
         </div>
-        <h3>My Background</h3>
+        <h3>Background</h3>
         <div>
             <p>
-                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                suscipit faucibus urna.
+                Specializing in computer programming, I started with Java last year and now focus on frontend web
+                development using HTML, CSS, and JavaScript DOM manipulation to create clean interfaces.
             </p>
         </div>
-        <h3>My Interests</h3>
+        <h3>Interests</h3>
         <div>
             <p>
-                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                Outside of coding, I spend my time playing competitive volleyball for my school, diving into gaming, and
+                exploring creative digital projects.
+            </p>
+            <br>
+            <p>
+                This is a list of my interests:
             </p>
             <ul>
-                <li>List item one</li>
-                <li>List item two</li>
-                <li>List item three</li>
+                <li>Volleyball</li>
+                <li>Gaming</li>
+                <li>Digital Art</li>
             </ul>
         </div>
-        <h3>Credibility</h3>
+        <h3>Accomplishments as Student in GJRRSHS</h3>
         <div>
-            <p>
-                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                mauris vel est.
-            </p>
-            <p>
-                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos.
-            </p>
+            <ol>
+                <li>Grade 12 ICT Programming Strand</li>
+                <li>Graduating Student</li>
+                <li>Web Developer</li>
+            </ol>
         </div>
     </div>
 </body>
@@ -122,4 +131,5 @@
         <p>© All rights Reserved | Programmed by : Lanzirwin</p>
     </div>
 </footer>
+
 </html>
