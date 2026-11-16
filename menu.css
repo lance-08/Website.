@@ -4,10 +4,11 @@
     /* kulay ng gray navigation bar background  */
     width: 100%;
     /* lapad ng navigation bar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    /* nagbibigay ng shadow effect sa navigation bar */
+    display: flex;
     justify-content: center;
     /* nag g-gitna sa navigation bar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    /* nagbibigay ng shadow effect sa navigation bar */
 }
 
 /* nagbibigay estilo sa navigation links */
@@ -291,4 +292,55 @@ nav {
 
 .dot.active {
     background: #1F3864;
+}
+
+/* home page style */
+.home-main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 65vh;
+}
+
+.intro {
+    background-color: #0A182C;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 8px;
+    border-bottom: 4px solid #38BDF8;
+    margin-bottom: 35px;
+}
+
+.hello {
+    color: #38BDF8;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.intro h2 {
+    font-size: 16px;
+    color: #94A3B8;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.message {
+    color: #CBD5E1;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 50px;
 }
