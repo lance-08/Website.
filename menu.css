@@ -135,6 +135,15 @@ nav {
 }
 
 
+.gallery-message {
+    font-family:cursive;
+    font-size: 22px;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
