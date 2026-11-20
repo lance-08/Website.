@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Tree</title>
+    <style>
+        #myDrawing {
+            border: solid 1px black;
+        }
+
+
+        body {
+            margin: 0;
+            height: 150vh;
+            display: grid;
+            place-items: center;
+            background-color: darkolivegreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <a href="portfolio.html">BACK TO PORTFOLIO</a>
+    </center>
+    <canvas height="500" width="1000" id="myDrawing">
+    </canvas>
+
+    <script>
+        const canvas = document.getElementById("myDrawing");
+        const ctx = canvas.getContext("2d");
+
+        // Star
+        ctx.beginPath();
+        ctx.moveTo(500, 50);
+        ctx.lineTo(515, 80);
+        ctx.lineTo(545, 80);
+        ctx.lineTo(520, 100);
+        ctx.lineTo(530, 130);
+        ctx.lineTo(500, 110);
+        ctx.lineTo(470, 130);
+        ctx.lineTo(480, 100);
+        ctx.lineTo(455, 80);
+        ctx.lineTo(485, 80);
+        ctx.closePath();
+        ctx.fillStyle = "gold";
+        ctx.fill();
+
+        // Top part of the tree
+        ctx.beginPath();
+        ctx.moveTo(500, 100);
+        ctx.lineTo(430, 220);
+        ctx.lineTo(570, 220);
+        ctx.closePath();
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        // Middle part of the tree
+        ctx.beginPath();
+        ctx.moveTo(500, 160);
+        ctx.lineTo(390, 310);
+        ctx.lineTo(610, 310);
+        ctx.closePath();
+        ctx.fillStyle = "darkgreen";
+        ctx.fill();
+
+        // Bottom part of the tree
+        ctx.beginPath();
+        ctx.moveTo(500, 230);
+        ctx.lineTo(350, 400);
+        ctx.lineTo(650, 400);
+        ctx.closePath();
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        // Tree trunk
+        ctx.beginPath();
+        ctx.rect(465, 400, 70, 60);
+        ctx.fillStyle = "brown";
+        ctx.fill();
+
+
+
+
+        function draw20BlueCircles() {
+            for (let i = 0; i < 20; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const radius = Math.random() * 5 + 5;
+                const hue = Math.floor(Math.random() * 40) + 195;
+                const lightness = Math.floor(Math.random() * 50) + 35;
+                ctx.fillStyle = "hsl(" + hue + ", 85%, " + lightness + "%)";
+
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.closePath();
+            }//end of for loop 
+        }//end fo function 
+
+        draw20BlueCircles();
+
+        ctx.font = "30px Monotype Corsiva";
+        ctx.fillStyle = "red";
+        ctx.fillText("MERYY CHRISMAST EVEYONE!", 550, 450);
+        ctx.fillText("Let's Celebrate Christmas Everyone!", 40, 80);
+    </script>
+</body>
+
+</html>
