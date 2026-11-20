@@ -134,14 +134,22 @@ nav {
     text-align: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 .container {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
     justify-content: center;
     justify-items: center;
+    align-content: start;
     max-width: 1000px;
+    width: 100%;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -157,7 +165,8 @@ nav {
     font-size: 22px;
     color: #111827;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 25px auto 20px;
+    width: 100%;
 }
 
 /* footer style */
@@ -222,12 +231,15 @@ nav {
 /* carousel style in gallery*/
 
 .carousel {
+    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    flex-shrink: 0;
+    margin: 0 auto 40px;
 }
 
 .slides {
     position: relative;
+    width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #000;
@@ -304,6 +316,7 @@ nav {
 
 /* home page style */
 .home-main {
+    flex: 1;
     max-width: 950px;
     margin: 40px auto;
     padding: 0 20px;
