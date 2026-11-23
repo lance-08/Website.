@@ -160,20 +160,11 @@ body {
     box-sizing: border-box;
 }
 
-.gallery-message {
-    font-family:cursive;
-    font-size: 22px;
-    color: #111827;
-    text-align: center;
-    margin: 25px auto 20px;
-    width: 100%;
-}
-
 /* footer style */
 
 .footer {
-    background-color: #b0dfe4;
-    color: #111827;
+    background-color: #00124e;
+    color: #ffffffa9;
     font-family: "Segoe UI", sans-serif;
     width: 100%;
     margin-top: auto;
@@ -184,7 +175,7 @@ body {
     justify-content: space-around;
     padding: 20px 8%;
     flex-wrap: wrap;
-    height:auto;
+    height: auto;
 }
 
 .footer-text {
@@ -209,14 +200,14 @@ body {
 }
 
 .social-links a {
-    color: #111827;
+    color: #ffffffa9;
     font-size: 25px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .social-links a:hover {
-    color: #111827;
+    color: #ffffffa9;
 }
 
 .footer-bottom {
@@ -365,3 +356,21 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
+
+/* Header for every Page*/
+.all-header {
+    background-color: #00124e;
+    color: #ffffffa9;
+    text-align: center;
+    padding: 25px;
+}
+
+.all-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* For Mobile and Desktop View */
+ @media (max-width: 600px) { 
+      header { flex-direction: column; gap: 10px; } 
+    } 
