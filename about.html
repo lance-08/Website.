@@ -2,23 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
     <script>
         $(function () {
-            $("#accordion").accordion();
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
         });
     </script>
+
     <style>
+        body {
+            background-color: #f4f9fb;
+            font-family: Arial, sans-serif;
+            color: #0f172a;
+            margin: 0;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .top-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
         #accordion {
-            max-width: 700px;
-            margin: 40px auto;
+            flex: 1;
+            min-width: 300px;
+            margin: 0;
         }
 
         .ui-accordion-header {
@@ -48,96 +75,195 @@
             color: #0f172a;
             border: 1px solid #cbd5e1;
             font-size: 10.5pt;
-            line-height: 16pt;
+        }
+
+        .profile-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            background-position: center;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-size: cover;
+            border: 3px solid #00124e;
+        }
+
+        .profile-info h2 {
+            color: #00124e;
+            margin-bottom: 8px;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+        }
+
+        .bottom-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #00124e;
+        }
+
+        .bottom-box h3 {
+            color: #00124e;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .bottom-box p {
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
-
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
         </ul>
     </nav>
-    <br>
-    <div id="accordion">
-        <h3>Who I Am</h3>
-        <div>
-            <p>
-                I am a Grade 12 Graduating ICT Programming Student at Gov. Juanito Reyes Remulla Senior High School and
-                web developer who loves building functional website. I am passionate about coding and continuously
-                learning new technologies to enhance my skills.
-            </p>
-        </div>
-        <h3>Background</h3>
-        <div>
-            <p>
-                Specializing in computer programming, I started with Java last year and now focus on frontend web
-                development using HTML, CSS, and JavaScript DOM manipulation to create clean interfaces.
-            </p>
-        </div>
-        <h3>Interests</h3>
-        <div>
-            <p>
-                Outside of coding, I spend my time playing competitive volleyball for my school, diving into gaming, and
-                exploring creative digital projects.
-            </p>
-            <br>
-            <p>
-                This is a list of my interests:
-            </p>
-            <ul>
-                <li>Volleyball</li>
-                <li>Gaming</li>
-                <li>Digital Art</li>
-            </ul>
-        </div>
-        <h3>Accomplishments as Student in GJRRSHS</h3>
-        <div>
-            <ol>
-                <li>VolleyBall Cluster Champion 2025</li>
-                <li>VolleyBall DAAM Top 4 2025</li>
-                <li>Honor Student Grade 11 1st to 4th Quarter</li>
-                <li>VolleyBall MVP Intramurals 2025</li>
-                <li>VolleyBall Intramurals Champion 2025</li>
-                <li>VolleyBall PSVC Top 4 Qualifier 2025</li>
-                <li>Technical Excellence Award 2025</li>
-                <li>Call Of Duty Intramurals Champion 2025</li>
-                <li>VolleyBall Cluster Champion 2026</li>
-                <li>VolleyBall PSVC Top 8 Qualifier 2026</li>
 
-            </ol>
-        </div>
+    <div class="all-header">
+        <h3>About Me</h3>
     </div>
-</body>
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-text">
-            <h3>Stay Connected!</h3>
-            <p>
-                "Thank you for visiting my website. Connect with me on social media
-                or reach out via email for collaborations and inquiries. Your
-                support and feedback are greatly appreciated."
-            </p>
-        </div>
-        <div class="footer-social">
-            <h3>Follow Me</h3>
-            <div class="social-links">
-                <a href="https://www.facebook.com/">f</a>
-                <a href="https://www.youtube.com/">▶</a>
-                <a href="https://www.linkedin.com/">in</a>
+
+    <div class="about-container">
+        <div class="top-row">
+            <div id="accordion">
+                <h3>Who I Am</h3>
+                <div>
+                    <p>
+                        I am a Grade 12 Graduating ICT Programming Student at Gov. Juanito Reyes Remulla Senior High
+                        School and web developer who loves building functional websites. I am passionate about coding and
+                        continuously learning new technologies to enhance my skills.
+                    </p>
+                </div>
+
+                <h3>Background</h3>
+                <div>
+                    <p>
+                        Specializing in computer programming, I started with Java last year and now focus on frontend
+                        web development using HTML, CSS, and JavaScript DOM manipulation to create clean interfaces.
+                    </p>
+                </div>
+
+                <h3>Interests</h3>
+                <div>
+                    <p>
+                        Outside of coding, I spend my time playing competitive volleyball for my school, diving into
+                        gaming, and exploring creative digital projects.
+                    </p>
+                    <br>
+                    <p>This is a list of my interests:</p>
+                    <ul>
+                        <li>Volleyball</li>
+                        <li>Gaming</li>
+                        <li>Digital Art</li>
+                    </ul>
+                </div>
+
+                <h3>Personality</h3>
+                <div>
+                    <p>
+                        I'm Extrovert Person but sometimes I feel shy around a lot of people, I also want to be alone all the time
+                        because I want a Peaceful time and I am a loner guy. ISTG FRFR...
+                    </p>
+                </div>
+
+                <h3>Accomplishments as Student in GJRRSHS</h3>
+                <div>
+                    <ol>
+                        <li>VolleyBall Cluster Champion 2025</li>
+                        <li>VolleyBall DAAM Top 4 2025</li>
+                        <li>Honor Student Grade 11 1st to 4th Quarter</li>
+                        <li>VolleyBall MVP Intramurals 2025</li>
+                        <li>VolleyBall Intramurals Champion 2025</li>
+                        <li>VolleyBall PSVC Top 4 Qualifier 2025</li>
+                        <li>Technical Excellence Award 2025</li>
+                        <li>Call Of Duty Intramurals Champion 2025</li>
+                        <li>VolleyBall Cluster Champion 2026</li>
+                        <li>VolleyBall PSVC Top 8 Qualifier 2026</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="profile-box">
+                <div class="profile-img" style="background-image:url('Pictures/profile.jpe');"></div>
+                <div class="profile-info">
+                    <h2>Hi! I'm Lance.</h2>
+                    <p>
+                        I'm a Grade 12 ICT programming student who enjoys building clean websites and playing
+                        competitive volleyball.
+                    </p>
+                    <p>
+                        <b>School:</b> Governor Juanito Reyes Remulla Senior High School
+                    </p>
+                    <p><b>Strand:</b> TVL - ICT (Computer Programming)</p>
+                </div>
             </div>
         </div>
+
+        <div class="bottom-box">
+            <h3>About My Journey</h3>
+            <p>
+                Hi! I'm Lance Kherwin, also known as Lanzirwin. As an ICT programming student and student-athlete,
+                I enjoy turning ideas into clean, functional websites while balancing discipline on the volleyball
+                court. Whether I'm writing JavaScript, designing interfaces, or competing with my team, I always strive to
+                keep improving every day.
+            </p>
+        </div>
     </div>
 
-    <div class="footer-bottom">
-        <p>© All rights Reserved | Programmed by : Lanzirwin</p>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Stay Connected!</h3>
+                <p>
+                    Thank you for visiting my website. Connect with me on social media
+                    or reach out via email for collaborations and inquiries. Your
+                    support and feedback are greatly appreciated.
+                </p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/">f</a>
+                    <a href="https://www.youtube.com/">▶</a>
+                    <a href="https://www.linkedin.com/">in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© All rights Reserved | Programmed by : Lanzirwin</p>
+        </div>
+    </footer>
+</body>
 
 </html>
