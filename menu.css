@@ -1,3 +1,17 @@
+/* Universal Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f7f9;
+}
+
 /* nagbibigay kulay sa navigation bar background */
 .navbar {
     background-color: #111827;
@@ -29,14 +43,6 @@
     /* bigat ng font ng link */
     transition: background-color 0.3s ease, color 0.3s ease;
     /* nagbibigay ng transition effect sa background at color ng link */
-}
-
-/* nagbibigay estilo sa navigation links kapag hover */
-.nav-link:hover {
-    background-color: #1E293B;
-    /* kulay ng background kapag hover */
-    color: #E2E8F0;
-    /* kulay ng text kapag hover */
 }
 
 /* nagbibigay estilo sa navigation links kapag active */
@@ -80,6 +86,7 @@
 .nav-link.active {
     background-color: #1F2937;
     /* kulay ng background kapag active at nandoon ang user */
+    color: #E2E8F0;
     border-bottom: 4px solid #38BDF8;
     /* nagbibigay ng border sa ilalim ng link kapag active at nandoon ang user */
 }
@@ -100,6 +107,11 @@
     /* tinatanggal ang default na margin ng list */
     padding: 0;
     /* tinatanggal ang default na padding ng list */
+}
+
+nav {
+    text-decoration: none;
+    text-align: center;
 }
 
 #b {
@@ -129,17 +141,6 @@
     transform: translateY(-2px);
 }
 
-nav {
-    text-decoration: none;
-    text-align: center;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 .container {
     flex: 1;
     display: grid;
@@ -154,78 +155,198 @@ body {
     padding: 0 20px;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-/* footer style */
-
-.footer {
-    background-color: #00124e;
-    color: #ffffffa9;
-    font-family: "Segoe UI", sans-serif;
+/* home page style */
+.home-main {
+    flex: 1;
+    max-width: 1000px;
     width: 100%;
-    margin-top: auto;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 8%;
-    flex-wrap: wrap;
-    height: auto;
-}
-
-.footer-text {
-    width: 50%;
-}
-
-.footer-text p {
-    margin: 10px 15px;
-    font-size: 12px;
-}
-
-.footer-social {
+.intro {
+    background-color: #0A182C;
+    color: #ffffff;
     text-align: center;
-    padding-top: 25px;
+    padding: 45px 35px;
+    border-radius: 10px;
+    border: 2px solid #38BDF8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 35px;
 }
 
-.social-links {
+.hello {
+    color: #cbcbcb;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.intro h1 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.intro h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #CBD5E1;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-family: 'Segoe UI', sans-serif;
+    color: #E2E8F0;
+    font-size: 15px;
+    max-width: 650px;
+    margin: 0 auto 28px auto;
+}
+
+.btn {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #94A3B8;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #94A3B8;
+}
+
+/* Contact */
+.contact {
+    flex: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    align-items: stretch;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-left .intro {
+    flex: 1;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-links {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 15px;
+    gap: 12px;
 }
 
-.social-links a {
-    color: #ffffffa9;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.social-links a:hover {
-    color: #ffffffa9;
-}
-
-.footer-bottom {
-    background-color: #111827;
-    color: white;
+.contact-box {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 8px;
     text-align: center;
-    padding: 30px;
-    font-size: 12px;
-    width: 100%;
+    border-top: 4px solid #1F3864;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* carousel style in gallery*/
+.contact-title {
+    font-family: Georgia, serif;
+    color: #0A182C;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
 
+.contact-detail {
+    font-family: 'Segoe UI', sans-serif;
+    color: #475569;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Columns in About */
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px 22px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid #1F3864;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    color: #0A182C;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Header for every Page */
+.all-header {
+    background-color: #00124e;
+    color: #ffffffa9;
+    text-align: center;
+    padding: 25px;
+}
+
+.all-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* carousel style in gallery */
 .carousel {
     width: 100%;
     max-width: 800px;
     flex-shrink: 0;
     margin: 0 auto 40px;
+    padding: 35px;
 }
 
 .slides {
@@ -305,72 +426,78 @@ body {
     background: #1F3864;
 }
 
-/* home page style */
-.home-main {
-    flex: 1;
-    max-width: 950px;
-    margin: 40px auto;
-    padding: 0 20px;
-    min-height: 65vh;
-}
-
-.intro {
-    background-color: #0A182C;
-    color: #ffffff;
-    text-align: center;
-    padding: 45px 30px;
-    border-radius: 8px;
-    border-bottom: 4px solid #38BDF8;
-    margin-bottom: 35px;
-}
-
-.hello {
-    color: #38BDF8;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.intro h1 {
-    font-size: 32px;
-    color: #ffffff;
-    margin-bottom: 8px;
-}
-
-.intro h2 {
-    font-size: 16px;
-    color: #94A3B8;
-    font-weight: 400;
-    margin-bottom: 18px;
-}
-
-.message {
-    color: #CBD5E1;
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-.section {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/* Header for every Page*/
-.all-header {
+/* footer style */
+.footer {
     background-color: #00124e;
     color: #ffffffa9;
-    text-align: center;
-    padding: 25px;
+    font-family: "Segoe UI", sans-serif;
+    width: 100%;
+    margin-top: auto;
 }
 
-.all-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 8%;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.footer-text {
+    width: 50%;
+}
+
+.footer-text p {
+    margin: 10px 15px;
+    font-size: 12px;
+}
+
+.footer-social {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #ffffffa9;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    width: 100%;
 }
 
 /* For Mobile and Desktop View */
- @media (max-width: 600px) { 
-      header { flex-direction: column; gap: 10px; } 
-    } 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-text {
+        width: 100%;
+        text-align: center;
+    }
+}
