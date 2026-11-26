@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .intro-badge-icons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 16px;
+            font-size: 20px;
+            color: #38BDF8;
+        }
+
+        .card-icon {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 14px auto;
+            border-radius: 50%;
+            background-color: #f0f7ff;
+            color: #00124e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            border: 2px solid #38BDF8;
+        }
+        .intro .fa-solid{
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,6 +50,11 @@
 
     <main class="home-main">
         <section class="intro">
+            <div class="intro-badge-icons" aria-hidden="true">
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-volleyball"></i>
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
             <p class="hello">Hello, I am</p>
             <h1>Lance Kherwin C. Maliksi</h1>
             <h2>Grade 12 ICT Student & Volleyball Player</h2>
@@ -32,14 +66,17 @@
 
         <section class="section">
             <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-pen-ruler"></i></div>
                 <h3>Web Design</h3>
                 <p>Clean and structured web pages built using basic HTML and CSS.</p>
             </div>
             <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-folder-open"></i></div>
                 <h3>My Portfolio</h3>
                 <p>A collection of my programming tasks, school activities, and outputs.</p>
             </div>
             <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-camera-retro"></i></div>
                 <h3>Photo Gallery</h3>
                 <p>Snapshots of my student life, family, hobbies, and memorable moments in my ICT journey.</p>
             </div>
@@ -59,9 +96,9 @@
             <div class="footer-social">
                 <h3>Follow Me</h3>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/">f</a>
-                    <a href="https://www.youtube.com/">▶</a>
-                    <a href="https://www.linkedin.com/">in</a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -73,4 +110,3 @@
 </body>
 
 </html>
-
